@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>网站注册</title>
+    <link rel="stylesheet" href="../../public/css/bootstrap.css" />
+    <link rel="stylesheet" href="../../public/css/base.css" />
+    <link rel="stylesheet" href="../../public/css/regist.css" />
+    <!-- 为标题添加图标logo -->
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/favicon-ico.ico" media="screen">
+    <script src="../../public/javascripts/jquery-3.2.1.min.js"></script>
+    <script src="../../public/javascripts/bootstrap.min.js"></script>
+    <script src="../../public/javascripts/regist.js"></script>
+    <!-- 解决html5和媒体查询的兼容性 -->
+    <!-- [if lt IE 9]  -->
+         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+     <!-- [endif]  -->
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5 hidden-sm hidden-xs" id="side">
+                 <a href="" id="logo"><h2>淮师大</h2></a>
+                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                  <!--Indicators -->
+                  <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="../../public/images/01-1.jpg" alt="...">
+                        </div>
+                        <div class="item">
+                          <img src="../../public/images/01-3.jpg" alt="...">
+                        </div>
+                        <div class="item">
+                          <img src="../../public/images/01-4.jpg" alt="...">
+                        </div>
+                  </div>
+                </div> 
+            </div>
+            <div class="col-md-7 col-sm-12 col-xs-12 pull-right" id="right">
+                <div class="header clearfix">
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-2">
+                        <img src="../../public/images/logo3.png" alt="" />
+                        <a href="#" id="qq">QQ靓号</a>
+                    </div>
+                    <div class="col-lg-2"><a href="#">
+                        <i class="glyphicon glyphicon-folder-open"></i>邮箱账号</a></div>
+                    <div class="col-lg-2"><a href="">简体中文<span class="caret"></span></a></div>
+                    <div class="col-lg-2"><a href="">意见反馈</a></div>
+                </div>
+                <div class="form col-lg-12 clearfix">
+                    <div class="content col-lg-10">
+                         <div class="col-lg-12">
+                                <p>欢迎注册</p>
+                            </div>
+                            <div class="col-lg-5"><h3>每一天，乐在沟通</h3></div>
+                            <div class="col-lg-4"></div>
+                            <div class="col-lg-3">
+                                <a href="#" id="offer">
+                                    <h3>免费靓号</h3>
+                                </a>
+                            </div>
+                            <div id="formsub">
+                                <div class="col-lg-12">
+                                        <input type="text" class="usename" placeholder="昵称" name="usename" />
+                                       <!--  <span>昵称不能为空</span>
+                                        <span>您不能使用该昵称注册</span> -->
+                                </div>
+                                <div class="col-lg-12">
+                                        <input type="password" class="pwd" placeholder="密码" name="pwd" />
+                                        <!-- <span>不能使用空格</span>
+                                        <span>长度为8-16个字符</span>
+                                        <span>必须包含字母、数字或符号中至少两种</span> -->
+
+                                </div>
+                                <div class="col-lg-4">
+                                    <select class="form-control input-lg">
+                                        <option value="">大陆+86</option>
+                                        <option value="">香港特别行政区+852</option>
+                                        <option value="">澳门特别行政区+853</option>
+                                    </select>
+                                    <!-- <span>可通过该手机找回密码</span> -->
+                                </div>
+                                <div class="col-lg-8">
+                                    <input type="text" placeholder="手机号码" />
+                                </div>
+                                <div class="col-lg-4">
+                                    <input type="text" placeholder="短信验证码" />
+                                    <!-- <span>可通过该手机找回密码</span> -->
+                                </div>
+                                <div class="col-lg-8" id="btn" >
+                                    <a type="button" class="btn-lg btn-primary">发送短信验证码</a>
+                                </div>
+                                <div class="col-lg-12">
+                                    <!-- 解决了跳转问题 -->
+                                    <a href="http://localhost:8888/" type="button" id="imd_regist" class="btn-lg btn-primary">立即注册</a>
+                                </div>
+                                <div>
+                                    <h4>copyright by Mr.zhu</h4>
+                                </div>
+                            </div>
+                    </div>
+                   <div class="col-lg-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

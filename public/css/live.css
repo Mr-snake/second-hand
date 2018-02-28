@@ -1,0 +1,240 @@
+body p{
+    margin:0;
+}
+#nav {
+    color: #fff;
+    background-color: #0c0a0a;
+    border-radius: 0px;
+}
+#nav a{
+    color: #fff;
+}
+#nav p{
+    color: #fff;
+}
+#search{
+    height: 56px;
+    /*line-height: 56px;*/
+    margin-top: 20px;
+    /*text-align: center;*/
+}
+#search .logo{
+    padding: 0px 20px 0 0;
+    display: inline-block;
+    border-right: 1px solid #ddd;
+    margin-top: 12px;
+}
+#search .col-lg-2,.col-lg-5,.col-lg-10{
+    padding-right: 0px;
+    padding-left: 0px;
+    line-height: 35px;
+}
+#search .col-lg-5{
+    margin-top: 13px;
+    min-height: 0px;
+}
+#search .col-lg-10{
+    min-height: 0px;
+}
+#search .col-lg-10 input{
+    height: 35px;
+    border: 2px solid #e20052;
+    width: 100%;
+    padding-left: 10px;
+}
+h4{
+    line-height: 2; 
+}
+#s_btn{
+    padding: 10px 21px;
+    background: #e20052;
+}
+#search .car{
+    border:1px solid #ddd;
+    padding:10px 20px;
+}
+#search .car img{
+    margin-right: 20px;
+}
+#search .shopcar{
+    padding:13px 20px;
+    position: relative;
+}
+#search .shopcar b{
+    position: absolute;
+    font-size: 12px;
+    color: #fff;
+    background-color: #ff4e45;
+    line-height: 20px;
+    border-radius: 10px;
+    padding-left: 7px;
+    padding-right: 6px;
+    font-weight: 100;
+    height: 20px;
+    top: 8px;
+    left: 50px;
+    z-index: 1000;
+}
+#free{
+    text-align: center;
+    margin-top: -15px;
+}
+#free span{
+    font-size: 12px;
+}
+#divide{
+    background: #74086e;
+    border-bottom: none;
+    height: 40px;
+}
+#divide li a{
+    color: #fff;
+    display: block;
+}
+#divide li a:hover{
+    background: #c70048;
+}
+#bgbom{
+    background: #c70048;
+}
+.bgbom{
+    height: 15px;
+    
+}
+#divide .navbar-nav{
+    height: 40px;
+    line-height: 40px;
+}
+.navbar-nav > li > a {
+     padding-top: 0px; 
+     padding-bottom: 0px; 
+}
+.navbar-nav > li > a {
+    padding-top: 10px;
+    display: block;
+    padding-bottom: 10px;
+}
+/*今日最新*/
+.page-header span{
+    background: #ff0b43;
+    color: #fff;
+}
+.page-header em{
+    font-size: 15px;
+    margin-left: 10px;
+}
+.page-header {
+    border-bottom: 2px solid #aaa;
+
+}
+#now .media{
+    transition:all 1s;
+    padding-right: 0px;
+    border:3px solid transparent;
+}
+#now .media:hover{
+    border:3px solid #e20052;
+}
+.media-right{
+     padding-left: 0px;
+     /*position: relative;*/
+}
+.media-left{
+    padding-left:0px;
+    padding-right:0px;
+    position: absolute;
+    background: #f9f3f3;
+    /*border:1px solid #e5e5e5;*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    text-align: center;
+}
+.media-left .bottom{
+    position: absolute;
+    bottom: -1px;
+    background: #000;
+    color: #fff;
+    margin: 0;
+    width: 100%;
+    padding: 5px 0;
+}
+#now .media:hover .bottom{
+    background: #e20052;
+}
+#now .media  .route{
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+    background: #fff;
+    padding: 4px 0;
+}
+#now .media .media-left .court{
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    color:#e20052;
+}
+#now .media .media-left img{
+    padding:5px;
+}
+/*@media screen and (min-width: 1000px) {
+    #now .media-right img{
+        height: 100%;
+        width: 100%;
+    }
+}*/
+/*侧边栏*/
+#hor{
+    position: fixed;
+    right: 10%;
+    top: 34%;
+}
+#hor li{
+    width: 55px;
+    height: 55px;
+    margin-bottom: 3px;
+    background: #e20052;
+
+}
+#hor li a{
+    display: block;
+    border: 4px solid #e20052;
+    background-color: #e20052;
+    height: 55px;
+    width: 54px;
+    padding-top: 3px;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: Arial,'Microsoft YaHei';
+    color: #fff;
+    text-align: center;
+}
+#hor li a:hover{
+    background: #fff;
+    color:#e20052; 
+}
+ #hor li #top{
+    line-height: 47px;
+}
+/*最后疯购*/
+#rush ul li img:first-of-type{
+     width: 100%;
+}
+#rush ul li{
+    margin-bottom: 20px;
+}
+#rush ul li a{
+    border:3px solid transparent;
+    display: block;
+}
+#rush ul li a:hover{    
+    border:3px solid #e20052;
+}
+#rush ul li a p{
+    background: rgba(0,0,0,.6);
+    color: #fff;
+}

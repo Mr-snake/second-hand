@@ -1,0 +1,125 @@
+#logoline{
+	border-bottom: 3px solid #ff2832;
+	padding: 20px 50px;
+}
+.btn-danger{
+	background: #ff2832;
+    font-size: 18px;
+}
+#whitespace{
+	padding: 100px;
+}
+/*.container{
+	text-align: center;
+}*/
+.padding-row{
+    padding: 0 80px;
+}
+#cartlogin p:first-of-type{
+	font-size: 14px;
+    color: #8a8888;
+	margin-bottom: 30px;
+}
+#cartlogin .imd-login p{
+	display: inline;
+	font-size: 12px;
+	color: #8a8888;
+	margin-left: 20px;
+}
+.qChiceinput input{
+  margin-right: 20px;
+}
+.qchice ul{
+	height: 42px;
+}
+.list table{
+	border: 1px solid #ebebeb;
+    background-color: #fafafa;
+}
+.list table tr{
+	margin-bottom: 30px;
+} 
+.list img{
+    width: 65px;
+    height: 80px;
+    margin-left: 20px;	
+}
+.list a:hover{
+	color: red;
+	text-decoration: underline;
+}
+.dd-padding{
+	padding: 0 0 0 30px;
+}
+.del a{
+    display: block;
+}
+.item{
+	padding: 10px 30px;
+}
+.bg{
+	background: url(../../public/images/procedure_bg.png) no-repeat;
+	width: 634px;
+    height: 36px;
+    padding: 0;
+    margin:18px 0 0 40px;
+}
+.bg .mycar{
+	color: #fff;
+    width: 206px;
+    text-align: center;
+	line-height: 36px;
+}
+.bg span{
+	width: 208px;
+	display: inline-block;
+    text-align: center;
+	line-height: 36px;
+	color: #000;
+}
+.count{
+	width: 50px;
+    text-align: center;
+    height: 30px;
+    border: 1px solid #ddd;
+    float: left;
+    line-height: 18px;
+    color: #000;
+    font-weight: bold;
+}
+.num a{
+	border: 1px solid #ddd;
+    height: 30px;
+    float: left;
+    background: #fff5f5;
+}
+.zhifu{
+	color: red;
+}
+.ziying{
+	color: #323232;
+	font-weight: bold;
+}
+.ziying a:hover{
+	text-decoration: underline;
+	color: #000;
+}
+.ziying input{
+	margin: 0 20px 20px 0;
+}
+.add-total{
+	background: url(../../public/images/shopping_total.png) no-repeat;
+	width: 100%;
+    height: 75px;
+    line-height: 75px;
+}
+.all{
+	/*margin-left: 10px;*/
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+}
+#chiced{
+	font-size: 16px;
+	color: red;
+}

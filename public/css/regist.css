@@ -1,0 +1,96 @@
+body{
+	/*visibility: scroll-x;*/
+}
+.container-fluid {
+    padding-right: 0px; 
+    padding-left: 0px; 
+}
+#side{
+	height: 100%;
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 480px;
+	padding:0 0;
+}
+#logo{
+	position: absolute;
+	top:10%;
+	left: 10%;
+	z-index: 2;
+	color: #000;
+	font-family: serif;
+}
+.header{
+	margin-bottom: 20px;
+}
+/*登录验证*/
+#right{
+    padding:0px 20px 20px 20px;
+    /*text-align: center;*/
+    line-height: 84px;
+    font-size: 16px;
+}
+#right a{
+    /*color: #a28a8a;*/
+}
+#right a:hover{
+    color:#000;
+}
+#qq{
+	border-radius: 6px;
+    background: #f54444;
+    background: linear-gradient(126deg,#fc4754,#ff794c) #f54444;
+    height: 24px;
+    line-height: 24px;
+    font-size: 16px;
+    margin: 5px 0 0 0px;
+    color: #fff;
+    font-weight: 300;
+    padding:5px;
+}
+.glyphicon-folder-open{
+	margin-right: 10px;
+	color: #989292;
+}
+.form{
+	padding-left: 50px;
+}
+.form p{
+	font-size: 50px;
+}
+#formsub input,select{
+	width:100%;
+	border:1px solid #aaa;
+	height: 50px;
+	border-radius: 5px;
+	margin-top: 30px;
+	padding-left: 20px;
+}
+#formsub input:focus{
+	border:1px solid #549df8;
+}
+label{
+	display: block;
+}
+#formsub a{
+	height: 50px;
+	line-height: 30px;
+    display: block;
+    text-align: center;
+    color:#fff;
+    margin: 30px 0;
+}
+#formsub h4{
+	text-align: center;
+}
+#btn a{
+	margin-bottom: 0px;
+}
+#offer{
+	color:#549df8;
+}
+h3 {
+     margin-top: 0px; 
+     margin-bottom: 0px; 
+}

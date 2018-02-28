@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../../public/css/bootstrap.css" />
+    <link rel="stylesheet" href="../../public/css/base.css" />
+    <link rel="stylesheet" href="../../public/css/books.css" />
+    <link rel="stylesheet" href="../../public/css/cart.css" />
+
+
+    <!-- 为标题添加图标logo -->
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/favicon-ico.ico" media="screen">
+    <script src="../../public/javascripts/jquery-3.2.1.min.js"></script>
+    <script src="../../public/javascripts/bootstrap.min.js"></script>
+    <script src="../../public/javascripts/books.js"></script>
+    <script src="../../public/javascripts/theorder.js"></script>
+    <!-- 解决html5和媒体查询的兼容性 -->
+    <!-- [if lt IE 9]  -->
+         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+     <!-- [endif]  -->
+</head>
+<body>
+    <!-- 导航条 -->
+    <nav class="navbar navbar-default" id="nav">
+      <div class="container">
+        <div class="row">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+               
+                    <%if(!login){%>
+                    <p class="navbar-brand">欢迎光临淮师大校园网，<a href="#" class="login"><%=nickname%></a>
+                    </p>
+                <%}else{%>
+                    <p class="navbar-brand">欢迎光临淮师大校园网，请<a href="/" class="login">登录</a>成为会员
+                     </p>
+                <%}%>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">购物车</a></li>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">我的杂货</a></li>
+            <li><a href="#">客户服务</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+       </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- 品牌活动 -->
+    <section id="search">
+        <div class="container">
+            <div class="row padding-row">
+                <img src="../../public/images/pinpan.jpg" alt="" />
+            </div>
+        </div>
+    </section>
+    <!-- logo栏 -->
+    <section id="logoline">
+        <div class="container">
+            <div class="row padding-row">
+                <div class="col-md-3 hidden-xs">
+                    <img src="../../public/images/carlogo.png" alt="" />
+                </div>
+                <div class="col-md-9 bg">
+                    <span class="mycar">我的购物车</span>
+                    <span>我的订单</span>
+                    <span>填写订单</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="whitespace">
+        <div class="container">
+            <div class="row padding-row">
+                <%if(!login){%>
+                <div class="col-md-5 col-xs-12">
+                    <img src="../../public/images/empty.png" alt="" />
+                </div>
+                <div class="col-md-7 col-xs-12" id="cartlogin">
+                    <p class="col-xs-12">您的购物车是空的,您可以：</p>
+                    <div class="imd-login">
+                        <button class="btn btn-danger">立即登录</button>
+                        <p>登录后购物车的商品将保存到您的账号中，或者去逛逛</p>
+                    </div>
+                </div>
+                <%}else{%>
+                <!-- <div class="adderss">
+                    
+                </div> -->
+                <div class="qchice">
+                    <ul>
+                        <li class="col-md-2 qChiceinput">
+                            <label for="">
+                                <input type="checkbox" />全选
+                            </label>
+                        </li>
+                        <li class="col-md-2">
+                            商品信息
+                        </li>
+                        <li class="col-md-2">单价（元）</li>
+                        <li class="col-md-2">数量</li>
+                        <li class="col-md-2">金额（元）</li>
+                        <li class="col-md-2">操作</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="ziying add-padding">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <input type="checkbox" class="allchice" />
+                                <a href="">淮师大校园网自营</a> 
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="list add-padding">
+                    <table class="table tablelist">
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+                <div class="add-total">
+                    <table>
+                        <tr>
+                            <td class="col-md-1">
+                                <input type="checkbox" class="allchice"/>全选
+                            </td>
+                            <td class="col-md-1">
+                                <input type="checkbox" class="fanchice"/>批量删除
+                            </td>
+                            <td class="col-md-3 col-md-offset-4">已选择<i id="chiced">0</i>件商品</td>
+                            <td class="col-md-2 ">总计（不含运费）：￥<span class="all"></span></td>
+                            <td class="col-md-2"><button class="btn btn-danger">结算</button></td>
+                        </tr>
+                    </table>
+                </div>
+                <%}%>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="product">
+        <div class="container">
+            <div class="row padding-row">
+                
+            </div>
+        </div>
+    </section> -->
+</body>

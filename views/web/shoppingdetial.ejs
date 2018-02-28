@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>书程小驿商品详情</title>
+    <link rel="stylesheet" href="../../public/css/bootstrap.css" />
+    <link rel="stylesheet" href="../../public/css/base.css" />
+    <link rel="stylesheet" href="../../public/css/books.css" />
+    <link rel="stylesheet" href="../../public/css/shoppingdetial.css" />
+    <link rel="stylesheet" href="../../public/fonts/iconfont.css" />
+    <!-- 为标题添加图标logo -->
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/favicon-ico.ico" media="screen">
+    <script src="../../public/javascripts/jquery-3.2.1.min.js"></script>
+    <script src="../../public/javascripts/bootstrap.min.js"></script>
+    <script src="../../public/javascripts/lookdet.js"> </script>
+
+    <!-- 解决html5和媒体查询的兼容性 -->
+    <!-- [if lt IE 9]  -->
+         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+     <!-- [endif]  -->
+</head>
+<body>
+    <!-- 导航条 -->
+    <nav class="navbar navbar-default" id="nav">
+      <div class="container">
+        <div class="row">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                    <% 
+                          if(!login){
+                         %>
+                          <p class="navbar-brand">欢迎光临书程小驿，<a href="/" class="login"><%=nickname%></a>
+                     </p>
+                       <%
+                         }else{ 
+                       %>
+                          <p class="navbar-brand">欢迎光临书程小驿，请<a href="/" class="login">登录</a>成为会员
+                     </p>
+                     <%
+                       }
+                       %>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">书程小驿</a></li>
+            <li><a href="#">小驿自出版</a></li>
+            <li><a href="#">我的云书房</a></li>
+            <li><a href="#">我的驿站<span class="caret"></span></a></li>
+            <li><a href="#">客户服务<span class="caret"></span></a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+       </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- 搜索栏 -->
+    <section id="search">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-xs-6">
+                    <a href="" class="logo">
+                        <img src="../../public/images/logobook.png" class="img-responsive" />
+                    </a>
+                </div>
+                <div class="col-lg-2 col-xs-6">
+                    <h4>书程小驿阅读</h4>
+                </div>
+                <!-- <div class="col-lg-1"></div> -->
+                <div class="col-lg-5">
+                   
+                    <div class="col-lg-10 col-xs-9">
+                         <input type="text" placeholder="小学问" />
+                          <p class="hidden-xs">
+                             <em>搜索热词：</em>
+                             <a href="#">东野圭吾</a>
+                             <a href="#">严歌苓</a>
+                             <a href="#">凤求凰</a>
+                             <a href="#" class="hidden-xs">原则</a>
+                             <a href="#" class="hidden-xs">情商是什么</a>
+                          </p>
+                    </div> 
+                     <div class="col-lg-2 col-xs-3">
+                          <span id="s_btn">搜索</span>
+                    </div> 
+                   
+                </div>
+                <div class="col-lg-2 col-xs-6 shopcar hidden-xs">
+                    <a href="" class="car"><img src="../../public/images/new_car.png" alt="" />购物车<b>0</b></a>
+                </div>
+                <div class="col-lg-1 col-xs-6 hidden-xs" id="free">
+                    <img src="../../public/images/channel_35000.png" alt="" />
+                    <span >扫码免费读</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 图示分类 -->
+    <section id="divide">
+        <div class="container clearfix">
+            <div class="row">
+                <div class="col-lg-2 col-xs-6">
+                    <p><a href="">图书分类<span class="caret"></span></a></p>
+                </div>
+                <div class="col-lg-9 col-xs-12 hidden-xs">
+                    <ul class="nav navbar-nav col-lg-12 ">
+                        <li><a href="#">电子书</a></li>
+                        <li><a href="#">网络文学</a></li>
+                        <li>
+                            <a href="#" id="yue">
+                                租约
+                                <img src="../../public/images/hot_logo.png" alt="" />
+                            </a>
+                       </li>
+                        <li><a href="#">小驿云阅读器</a></li>
+                        <li><a href="#">书程小驿客户端</a></li>
+                        <li><a href="#">我要写书</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-1 col-xs-6 pull-right">
+                    <p> 
+                        <a href="">
+                            <img src="../../public/images/new_per_center.png" />
+                            <span>个人中心</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 商品详情 -->
+    <section>
+      <div class="container">
+        <div class="row" id="adddata">
+          <!-- 数据添加 -->
+          <div class="val">
+            
+          </div>
+          <div class="addsc" style="display: none">
+            <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4>添加购物车成功！</h4>
+                  <a href="/books" type="button" class="btn btn-danger">返回书城小驿</a>
+                  <a href="/cart" type="button" class="btn btn-default">我的购物车</a>
+                </p>
+              </div>
+          </div>
+          <div class="dateadd" style="display: none">
+            <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4>已经添加过了！</h4>
+                  <a href="/books" type="button" class="btn btn-danger">返回书城小驿</a>
+                  <a href="/cart" type="button" class="btn btn-default">我的购物车</a>
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="mod" class="bg" style="display: none">
+                        <div class="">
+                           <h3>分享生活，留住感动</h3>  
+                        </div>
+                        <form action="/login" class="clearfix">
+                            <div class="">
+                               <input type="text" placeholder="昵称" name="usename">  
+                            </div>
+                            <div class="">
+                               <input type="password" placeholder="密码" name="password">
+                            </div>
+                            <div class="gol">
+                                    <a type="button" class="btn-success btn-sm login">登录</a>
+                                    <span>还没账号？</span>
+                                    <a href="/regist" type="button" class="btn-danger btn-lg">加入我们</a>
+                            </div>
+                        </form>
+    </section>
+</body>

@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>良品铺子</title>
+    <link rel="stylesheet" href="../../public/css/bootstrap.css" />
+    <link rel="stylesheet" href="../../public/css/base.css" />
+    <link rel="stylesheet" href="../../public/css/books.css" />
+    <link rel="stylesheet" href="../../public/css/live.css" />
+
+    <!-- 为标题添加图标logo -->
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/favicon-ico.ico" media="screen">
+    <script src="../../public/javascripts/jquery-3.2.1.min.js"></script>
+    <script src="../../public/javascripts/bootstrap.min.js"></script>
+    <script src="../../public/javascripts/books.js"></script>
+
+    <!-- 解决html5和媒体查询的兼容性 -->
+    <!-- [if lt IE 9]  -->
+         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+     <!-- [endif]  -->
+</head>
+<body>
+    <!-- 导航条 -->
+    <nav class="navbar navbar-default" id="nav">
+      <div class="container">
+        <div class="row">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <!-- <%=!login%> -->
+               <%if(!login){%>
+                    <p class="navbar-brand">欢迎光临良品铺子，请<a href="/" class="login">登录</a>成为会员
+                     </p>
+                <%}else{%>
+                    
+                      <p class="navbar-brand">欢迎光临良品铺子，<a href="#" class="login"><%=nickname%></a>
+                    </p>
+                <%}%>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">良品铺子</a></li>
+            <li><a href="#">良品铺子设计</a></li>
+            <li><a href="#">我的云铺</a></li>
+            <li><a href="#">爱的良品<span class="caret"></span></a></li>
+            <li><a href="#">客户服务<span class="caret"></span></a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+       </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- 搜索栏 -->
+    <section id="search">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-xs-6">
+                    <a href="" class="logo">
+                        <img src="../../public/images/logogood.png" class="img-responsive" />
+                    </a>
+                </div>
+                <!-- <div class="col-lg-1"></div> -->
+                <div class="col-lg-5 col-xs-6">
+                    <div class="col-lg-10 col-xs-12">
+                         <input type="text" placeholder="尾品汇" />
+                    </div> 
+                     <div class="col-lg-2 hidden-xs">
+                          <span id="s_btn">搜索</span>
+                    </div> 
+                    
+                </div>
+                <div class="col-lg-5 hidden-xs">  
+                     <p>
+                        大家都在搜：
+                        <span>派克</span>
+                        <span>大衣</span>
+                        <span>羽绒服</span>
+                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 图示分类 -->
+    <section id="divide" class="hidden-xs">
+        <div class="container clearfix">
+            <div class="row">
+                <div class="col-lg-12 col-xs-12">
+                    <ul class="nav navbar-nav col-lg-12">
+                        <li><a href="#">尾品汇首页</a></li>
+                        <li><a href="#">男装</a></li>
+                        <li><a href="#">女装</a></li>
+                        <li><a href="#">室内</a></li>
+                        <li><a href="#">运动/户外</a></li>
+                        <li><a href="#">良品铺子客户端</a></li>
+                        <li><a href="#">我要精购</a></li>
+                        <li class="pull-right"><a href="#">收藏此页</a></li>
+                    </ul>
+                </div>
+        </div>
+    </section>
+    <section id="bgbom">
+        <div class="container"> 
+            <div class="row"> 
+              <div class="bgbom"> 
+              </div>  
+            </div>
+        </div>
+    </section>
+    <!-- 今日最新 -->
+    <section id="now">
+        <div class="container">
+            <div class="row">
+                <div class="page-header col-lg-6">
+                  <h1><b>今日</b><span>最新</span><em>NEW</em></h1>
+                </div>
+                <div class="col-lg-6"></div>
+                <div class="media col-lg-8">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object img-responsive" src="../../public/images/img1.jpg">
+                          <p class="text-center">一切皆有可能</p>
+                          <p class="court">九折新</p>
+                          <p class="bottom text-center">年货节</p>
+                        </a>
+                      </div>
+                      <div class="media-right">
+                        <a href="#">
+                            <img src="../../public/images/img11.jpg" class="img-responsive" />
+                        </a>
+                      </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="../../public/images/slogan.gif.gif" alt="" />
+                </div>
+                <div class="media col-lg-8">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object img-responsive" src="../../public/images/img2.jpg">
+                          <p class="text-center">一切皆有可能</p>
+                          <p class="court">九折新</p>
+                          <p class="bottom text-center">年货节</p>
+                        </a>
+                      </div>
+                      <div class="media-right">
+                        <a href="#">
+                            <img src="../../public/images/img22.jpg" class="img-responsive" />
+                        </a>
+                      </div>
+                </div>
+                <div class="col-lg-4"></div>
+                <div class="media col-lg-8">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object img-responsive" src="../../public/images/img3.jpg">
+                          <p class="text-center">一切皆有可能</p>
+                          <p class="court">九折新</p>
+                          <p class="bottom text-center">年货节</p>
+                        </a>
+                      </div>
+                      <div class="media-right">
+                        <a href="#">
+                            <img src="../../public/images/img33.jpg" class="img-responsive" />
+                        </a>
+                      </div>
+                </div>
+                <div class="col-lg-4"></div>
+                <div class="media col-lg-8">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object img-responsive" src="../../public/images/img4.jpg">
+                          <p class="text-center">一切皆有可能</p>
+                          <p class="court">九折新</p>
+                          <p class="bottom text-center">年货节</p>
+                        </a>
+                      </div>
+                      <div class="media-right">
+                        <a href="#">
+                            <img src="../../public/images/img44.jpg" class="img-responsive" />
+                        </a>
+                      </div>
+                </div>
+                <div class="col-lg-4"></div>
+                <div class="media col-lg-8">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object img-responsive" src="../../public/images/img5.jpg ">
+                          <p class="text-center">一切皆有可能</p>
+                          <p class="court">九折新</p>
+                          <p class="bottom text-center">年货节</p>
+                        </a>
+                      </div>
+                      <div class="media-right">
+                        <a href="#">    
+                            <img src="../../public/images/img55.jpg" class="img-responsive" />
+                        </a>
+                      </div>
+                </div>
+                <div class="col-lg-4"></div>
+        </div>
+    </section>
+    <!-- 最后疯抢 -->
+    <section id="rush">
+        <div class="container">
+            <div class="row">
+                <div class="page-header col-lg-6">
+                  <h1><b>最后</b><span>疯抢</span><em>CLOSE SOON</em></h1>
+                </div>
+                <div class="col-lg-6"></div>
+                <div class="col-lg-10">
+                    <ul>
+                        <li class="col-lg-5">
+                            <a href="#">
+                                <img src="../../public/images/rush2.jpg" class="img-responsive" />
+                                <p><span>满149减20</span><i class="pull-right">还剩4天</i></p>
+                                <img src="../../public/images/rush11.jpg" class="img-responsive" />
+                            </a>
+                        </li>
+                        <li class="col-lg-2"></li>
+                         <li class="col-lg-5">
+                            <a href="#">
+                                <img src="../../public/images/rush1.jpg" class="img-responsive" />
+                                <p><span>满149减20</span><i class="pull-right">还剩4天</i></p>
+                                <img src="../../public/images/rush22.jpg" class="img-responsive" />
+                            </a>
+                        </li>
+                        <li class="col-lg-5">
+                            <a href="#">
+                                <img src="../../public/images/rush3.jpg" class="img-responsive" />
+                                <p><span>满149减20</span><i class="pull-right">还剩4天</i></p>
+                                <img src="../../public/images/rush33.jpg" class="img-responsive" />
+                            </a>
+                        </li>
+                        <li class="col-lg-2"></li>
+                         <li class="col-lg-5">
+                            <a href="#">
+                                <img src="../../public/images/rush4.jpg" class="img-responsive" />
+                                <p><span>满149减20</span><i class="pull-right">还剩4天</i></p>
+                                <img src="../../public/images/rush44.jpg" class="img-responsive" />
+                            </a>
+                        </li>
+                        <li class="col-lg-5">
+                            <a href="#">
+                                <img src="../../public/images/rush5.jpg" class="img-responsive" />
+                                <p><span>满149减20</span><i class="pull-right">还剩4天</i></p>
+                                <img src="../../public/images/rush55.jpg" class="img-responsive" />
+                            </a>
+                        </li>
+                        <li class="col-lg-2"></li>
+                         <li class="col-lg-5">
+                            <a href="#">
+                                <img src="../../public/images/rush6.jpg" class="img-responsive" />
+                                <p><span>满149减20</span><i class="pull-right">还剩4天</i></p>
+                                <img src="../../public/images/rush66.jpg" class="img-responsive" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- aside -->
+    <aside id="hor">
+        <ul>
+            <li><a href="#now">今日最新</a></li>
+            <li><a href="#rush">最后疯购</a></li>
+            <li><a href="" id="top">TOP</a></li>
+        </ul>
+    </aside>
+    <!-- 联系我们 -->
+    <footer id="foot" class="text-center">
+       <p>Copyright (C) 校园网 2018-至今, All Rights Reserved</p>
+       <p>皖ICP证041189号|出版物经营许可证 新出发皖批字第直0673号</p>
+       <p>校园网收录的免费小说作品、频道内容、书友评论、用户上传文字、图片等其他一切内容及在校园网所做之广告均属用户个人行为，与校园网无关</p> 
+    </footer>
+</body>

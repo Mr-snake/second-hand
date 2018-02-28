@@ -1,0 +1,72 @@
+body{
+	background: url(../../public/images/sheji_03.png);
+	/*background: #fbf7f7;*/
+}
+#main h1{
+	font-size: 50px;
+	font-weight: bold;
+	font-family:serif;
+}
+#main .title{
+	height: 220px;
+}
+#main .inputbg{
+	background: url(../../public/images/inputbg.png) no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 300px;
+}
+.getput{
+
+	margin: 30px 0 0 10px;
+}
+.btn{
+	margin-left: 10px;
+}
+.shuoshuo{
+	background: rgba(222,190,165);
+	padding: 20px;
+}
+.info p{
+	margin:0;
+}
+.item li p{
+	    margin: 10px 5px 0 0;
+}
+.item{
+	background: rgba(255,255,255,.5);
+	height: 193px;
+    overflow: auto;
+    position: relative;
+}
+.item li{
+	border-bottom: 1px solid #d2c2c2;
+	padding: 5px;
+}
+.item li a{
+	color: #337ab7;
+}
+.item li a:hover{
+    text-decoration: underline;
+}
+#xianjin{
+	font-size: 50px;
+    color: red;
+    font-family: fantasy;/*'微软雅黑'*/
+}
+.time{
+	  color: #928a8a;
+}
+#list{
+	margin-top:10px;
+	position: absolute;
+	top:0;
+}
+.info p{
+	color: #675e5e;
+}
+.info p:last-of-type{
+	color: #b97744;
+    margin: 10px 0;
+    
+}

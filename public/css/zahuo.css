@@ -1,0 +1,271 @@
+/*主页中间模块*/
+.clearfix{
+	overflow: hidden;
+	content: '';
+	clear: both;
+}
+#main .cle{
+	height: 480px;
+}
+/*左边栏*/
+#main .cle .main-1{
+	width: 190px;
+	height: 100%;
+	background: #6e6568;
+	margin-right: 10px;
+}
+#main .cle .main-1 ul{
+	padding: 15px 0;
+	color: #636363;
+}
+#main .cle .main-1 ul li{
+	float: none;
+	padding-left: 18px;
+    height: 28px;
+    line-height: 28px
+}
+#main .cle .main-1 ul li:hover{
+	background: #9c9698;
+}
+#main .cle .main-1 ul li a{
+	color:#fff ;
+	font-size: 14px;
+	padding: 0 2px;
+}
+#main .cle .main-1 ul li span{
+    color: #fff;
+}
+#main .cle .main-1 ul li a:hover{
+	color: #f10215;
+}
+
+/*中间部分*/
+#main .cle .main-2{
+	width: 790px;
+	height: 100%;
+	/*margin-right: 10px;*/
+}
+#main .cle .main-2 img{
+    width: 100%;
+    height: 480px;
+}
+.main-2-bottom{
+	margin-top: 10px;
+}
+.bottom-left{
+	margin-right: 10px;
+}
+img{
+	vertical-align: top;
+}
+.main-2-top{
+	position: relative;
+}
+.main-2-top .arr-l,  .arr-r{
+	position: absolute;
+	top:50%;
+	width: 60px;
+	height: 80px;
+	background: rgba(0,253,0,.3);
+	font-size: 30px;
+	color: #fff;
+	line-height: 80px;
+	text-align: center;
+}
+.main-2-top  .arr-r{
+	right: 0;
+}
+ .main-2-top ul {
+	position: absolute;
+	bottom:20px;
+	left: 40%;
+	width: 170px;
+	height: 20px;
+	background: rgba(255,255,255,0.6);
+	border-radius: 10px;
+	text-align: center;
+}
+.main-2-top ul  li{
+	margin:5px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+}
+.main-2-top ul  li.current{
+	background: red;
+}
+/*右边栏*/
+#main .cle .main-3{
+	width: 190px;
+	height: 100%;
+}
+.main-3 .aside{
+    padding: 10px;
+}
+.main-3 .aside:first-of-type{
+    padding-top: 0px;
+}
+.main-3 .aside img{
+	width:100%;
+}
+/*秒杀*/
+#kill{
+	margin-top: 30px;
+	overflow:hidden;
+   
+}
+ #kill .miaokill{
+ 	height: 275px;
+ 	width: 190px;
+ 	background: #e83632;	
+ 	text-align: center;
+ 	color: #fff;
+    padding: 30px 20px 20px 20px;
+     float: left;
+ }
+ #kill .miaokill h4{
+ 	color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+ }
+ #kill .miaokill .glyphicon-flash{
+    font-size: 38px;
+ }
+ #time span{
+ 	display: inline-block;
+    padding: 6px 8px;
+    background: #2f3430;
+    position: relative;
+ }
+ #time span:before{
+ 	display:block;
+ 	content: '';
+ 	position: absolute;
+ 	left: 0;
+ 	top: 50%;
+    height: 1px;
+    width: 100%;
+    background: #e83632;
+ }
+ #time span i{
+ 	font-size: 20px;
+ 	/*显示在上面*/
+ 	position: relative;
+ }
+ #time{
+ 	margin-top: 16px;
+ }
+ #kill .miaokill p:last-of-type{
+ 	font-size: 16px;
+ 	margin-top: 10px;
+ }
+ /*秒杀商品列表*/
+ #kill .food {
+ 	float: left;
+ }
+ #kill .food ul li{
+    padding:30px 10px;
+    background: #fff;
+ }
+ #kill .food ul li{
+ 	margin-right: 1px;
+ 	text-align: center;
+    width: 200px;
+    height: 275px;
+    border: 1px solid #ddd;
+ }
+ #kill .food ul li p{
+ 	overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 20px 0 10px 0;
+ }
+ #kill .food .price .shprice,
+ #kill .food .price .oprice{
+ 	float: left;
+    width: 80px;
+    height: 22px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 0 0 5px;
+    margin-right: 0px;
+    font-size: 16px;
+    padding: 2px;
+ }
+ #kill .food .price i{
+ 	font-size: 12px;
+ }
+ #kill .food .price .shprice{
+ 	background: #e83632;
+ }
+ #kill .food .price .oprice{
+    border:1px solid #e83632;
+    color: #b7bcb8;
+    font-size: 12px;
+    text-decoration: line-through;
+    margin-left: 0;
+ }
+ #kill .miaotit{
+ 	text-align: center;
+    margin-bottom: 20px;		
+ }
+ /*还没逛够*/
+ #con_shop{
+ 	background: #ddd;
+ 	padding: 30px;
+ }
+ #title{
+ 	margin-bottom: 30px;
+ }
+ #con_shop .products .item ul li{
+ 	width: 230px;	
+ 	height: 305px;	
+ 	text-align: center;
+ 	background: #fff;
+ 	margin:0 10px 10px 0;
+ 	position: relative;
+ }
+ #con_shop .products .item ul li:hover{
+ 	opacity: 0.9;
+ }
+ #con_shop .products .item ul li:hover .search{
+ 	transition:all 0.8s;
+ 	-webkit-transition:all 0.8s;
+    -o-transition:all 0.8s;
+    -moz-transition:all 0.8s;
+    -webkit-transform: scale(1,1);
+    -o-transform: scale(1,1);
+    -moz-transform: scale(1,1);
+    transform: scale(1,1);
+ }
+ .search{
+ 	position:absolute;	
+ 	bottom: 5%;
+    left: 34%;
+ 	background: #222;
+ 	color: #fff;
+ 	width: 60px;
+ 	height:60px;
+ 	text-align: center;
+ 	line-height: 60px;
+ 	border-radius: 50%;
+ 	transform: scale(0,0);
+ 	-webkit-transform: scale(0,0);
+ 	-o-transform: scale(0,0);
+ 	-moz-transform: scale(0,0);
+ }
+ #con_shop .products .item p:first-of-type{
+ 	text-overflow: ellipsis;
+ 	overflow: hidden;
+ 	white-space: nowrap;
+ 	margin: 30px 0 10px 0;
+ }
+ .li-pad{
+    padding: 30px 30px 20px;
+ }
+ .li-pad span{ 
+    font-size: 17px;
+    color: red;
+ }

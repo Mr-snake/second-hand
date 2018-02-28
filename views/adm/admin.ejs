@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>淮师大校园二手网站</title>
+	<link rel="stylesheet" href="../public/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../public/css/base.css">
+	<link rel="stylesheet" href="../public/css/admin.css">
+	<script src="../public/javascripts/jquery-3.2.1.min.js"></script>
+	<script src="../public/javascripts/bootstrap.min.js"></script>
+	<script src="../public/javascripts/admin.js"></script>
+	<!-- 解决html5和媒体查询的兼容性 -->
+    <!-- [if lt IE 9]  -->
+         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+     <!-- [endif]  -->
+	<style>
+		td img{
+			width: 300px;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 头部 -->
+	<header>
+		<nav class="navbar navbar-default" id="nav">
+			  <div class="container-fluid">
+			  	<div class="row">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header ">
+			      <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="/">
+			      	<img src="../public/images/logo1.png" class="img-responsive">
+			      </a>
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <!-- <li class="active"><a href="#">Link </a></li> -->
+			        <li><a href="#">后台管理</a></li>
+			      </ul>
+			      <ul class="nav navbar-nav navbar-right">
+			        <li><a href="#">管理员设置</a></li>
+			        <li><a href="#"><i class="glyphicon glyphicon-off"></i>退出</a></li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			    </div>
+			  </div><!-- /.container-fluid -->
+        </nav>
+		<!-- 背景图 -->
+		<div class="container" id="h_con">
+			    <div class="font">
+			    	淮北师范大学
+			    </div>
+				<img src="../public/images/temp1.jpg" alt="">
+		</div>
+	</header>
+	<!-- 标签页 -->
+	<section class="container" id="pre">
+		  <!-- Nav tabs -->
+		  <ul class="nav nav-tabs col-lg-2 col-sm-2 col-md-2 col-xs-12" role="tablist">
+		  	<li role="presentation">
+		    	<a href="#home"  role="tab" data-toggle="tab" id="hsdlogo">
+		    		<img src="../public/images/hsd.jpg" alt="">
+		    	</a>
+		    </li>
+		    <li role="presentation" class="active">
+		    	<a href="#home"  role="tab" data-toggle="tab"><i class="glyphicon glyphicon-home"></i>首页</a>
+		    </li>
+		    <!-- <li role="presentation"><a href="#profile" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-heart"></i></a></li> -->
+		    <li role="presentation"><a href="#messages" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-thumbs-down"></i>书城小驿</a></li>
+		    <li role="presentation"><a href="#settings" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-send"></i>良品铺子</a></li>
+		    <li role="presentation"><a href="#zahuo" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-wrench"></i>解忧杂货	</a></li>
+		    <li role="presentation"><a href="#settings" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-send"></i>跳蚤市场</a></li>
+		    <li role="presentation"><a href="#adm" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-wrench"></i>管理设置</a></li>
+		  </ul>
+
+		  <!-- Tab panes -->
+		  <section class="tab-content col-lg-10 col-md-10 col-sm-12  col-xs-12">
+		  	<!-- 首页-->
+		    <div role="tabpanel" class="tab-pane active" id="home">
+		    	<form class="form-horizontal" method="post" action="/adm/login/scbannerImg" enctype="multipart/form-data">
+		    	  <p class="col-sm-10">我的表单</p>
+				  <div class="form-group">
+				    <label for="inputEmail3" class="col-sm-2 control-label">标题</label>
+				    <div class="col-sm-10">
+				      <input type="text" class="form-control title" id="inputEmail3" placeholder="标题" name="title">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputPassword3" class="col-sm-2 control-label">描述</label>
+				    <div class="col-sm-10">
+				     <textarea class="form-control des" rows="5" name="des"></textarea>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <input type="file" class="form-control" id="inputEmail3" placeholder="文件" name="text">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <input type="submit">
+				    </div>
+				  </div>
+				</form>
+				<table class="table">
+					<thead>
+						<th>ID</th>
+						<th>标题</th>
+						<th>描述</th>
+	                    <th>图片</th>
+	                    <th>操作</th>
+					</thead>
+					<tbody>
+						 <%
+                            for(var i=0;i<data.length;i++){
+                            %>
+                            <tr>
+                                <td>
+                                    <%=data[i].ID%>
+                                </td>
+                                <td>
+                                    <%=data[i].title%>
+                                </td>
+                                <td>
+                                    <%=data[i].description%>
+                                </td>
+                                <td>
+                                	<img src="../public/upload/<%=data[i].src%>">
+                                </td>
+                                <td>
+                                    <a href="?act=del&id=<%=data[i].ID%>" onclick="return confirm('are you delete?')">删除</a>
+                                </td>
+                            </tr>
+                            <%
+                            }
+                            %>
+					</tbody>
+				</table>
+		    </div>
+		    <!-- 书城小驿 -->
+		    <div role="tabpanel" class="tab-pane" id="messages">
+		    	<div role="tabpanel" class="tab-pane active" id="home">
+		    	<form class="form-horizontal" method="post" action="/adm/login/books" enctype="multipart/form-data">
+		    	  <p class="col-sm-10">我的表单</p>
+				  <div class="form-group">
+				    <label for="inputEmail3" class="col-sm-2 control-label">标题</label>
+				    <div class="col-sm-10">
+				      <input type="text" class="form-control title" id="inputEmail3" placeholder="书名" name="title">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputEmail3" class="col-sm-2 control-label">作者</label>
+				    <div class="col-sm-10">
+				      <input type="text" class="form-control title" id="inputEmail3" placeholder="作者" name="author">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputPassword3" class="col-sm-2 control-label">描述</label>
+				    <div class="col-sm-10">
+				     <textarea class="form-control des" rows="5" name="des"></textarea>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputEmail3" class="col-sm-2 control-label">现价</label>
+				    <div class="col-sm-10">
+				      <input type="text" class="form-control title" id="inputEmail3" placeholder="现价" name="shprice">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputEmail3" class="col-sm-2 control-label">原价</label>
+				    <div class="col-sm-10">
+				      <input type="text" class="form-control title" id="inputEmail3" placeholder="原价" name="oprice">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputEmail3" class="col-sm-2 control-label">类型</label>
+				    <span class="radio">
+					  <label>
+					    <input type="radio" name="optionsRadios" id="optionsRadios1" value="男" checked>男
+					  </label>
+					</span>
+					<span class="radio">
+					  <label>
+					    <input type="radio" name="optionsRadios" id="optionsRadios2" value="女">女
+					  </label>
+					</span>
+				  </div>
+
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <input type="file" class="form-control" id="inputEmail3" placeholder="文件" name="text">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <input type="submit">
+				    </div>
+				  </div>
+				</form>
+		      </div>
+		    </div>
+		    <!-- 良品铺子 -->
+		    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+		    <!-- 解忧杂货 -->
+		    <div role="tabpanel" class="tab-pane" id="zahuo">
+		    	<div role="tabpanel" class="tab-pane active" id="home">
+		    	<form class="form-horizontal" method="post" action="/adm/login/common" enctype="multipart/form-data">
+		    	  <p class="col-sm-10">解忧杂货</p>
+				  
+				  <div class="form-group">
+				    <label for="inputPassword3" class="col-sm-2 control-label">
+				    	产品详情
+				    </label>
+				    <div class="col-sm-10">
+				     <textarea class="form-control des" rows="5" name="des"></textarea>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputEmail3" class="col-sm-2 control-label">现价</label>
+				    <div class="col-sm-10">
+				      <input type="text" class="form-control title" id="inputEmail3" placeholder="现价" name="shprice">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputEmail3" class="col-sm-2 control-label">原价</label>
+				    <div class="col-sm-10">
+				      <input type="text" class="form-control title" id="inputEmail3" placeholder="原价" name="oprice">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputEmail3" class="col-sm-2 control-label">类型</label>
+				    <span class="radio">
+					  <label>
+					    <input type="radio" name="optionsRadios" id="optionsRadios1" value="food" checked>food
+					  </label>
+					</span>
+					<span class="radio">
+					  <label>
+					    <input type="radio" name="optionsRadios" id="optionsRadios2" value="foodlist">foodlist
+					  </label>
+					</span>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <input type="file" class="form-control" id="inputEmail3" placeholder="文件" name="text">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <input type="submit">
+				    </div>
+				  </div>
+				</form>
+		      </div>
+		    </div>
+		  </div>
+    </section>
+
+</body>
+</html>

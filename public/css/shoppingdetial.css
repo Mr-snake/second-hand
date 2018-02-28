@@ -1,0 +1,119 @@
+.breadcrumb {
+    background-color: #fff;
+}
+.main{
+	position: relative;
+	height: 110px
+}
+.main h4{
+	font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    line-height: 36px;
+    position: absolute;
+}
+.main span{
+	background: url(../../public/images/pinjia.png) no-repeat;
+	background-position: 0 -125px;
+	width: 200px;
+	height: 40px;
+	display: inline-block;
+	position: absolute;
+	bottom: -40px;
+    left: 0;
+}
+.main h5{
+	color: #ed4832;
+    font-weight: 700;
+    font-size: 12px;
+}
+.main i{
+    font-size: 20px;
+    padding-right: 4px;
+}
+.cont .col-md-2	img{
+	width: 100%;
+    height: 260px;
+}
+ .col-md-4{
+ 	padding: 0;
+ } 
+.cont .col-md-3 img{
+	width: 100%;
+	height: 100%;
+}
+.cont .col-md-6{
+	padding: 0 0 0 80px;
+}
+#share span{
+	margin-right: 10px;
+}
+#share i{
+	margin-right: 5px;
+}
+.yellow{
+	color: #fb6e1a;
+}
+#share span:hover{
+	color: #fb6e1a;
+}
+.btn-danger{
+	background: #db1b1b;
+}
+.add-p{
+	margin-left: 20px;
+}
+.shprice{
+	margin-right: 20px;
+}
+.shprice{
+	font-size: 24px;
+	color: #f10327;
+}
+.shprice em{
+	font-size: 15px;
+	color: #666;
+}
+/*登录框*/
+#mod {
+	position: fixed;
+	top:25%;
+	left:32%;
+	border: 2px solid #ddd;
+	display: none;
+	width: 400px;
+    background: #fff;
+}
+#mod form:nth-child(3){
+	height: 100px;
+    padding: 0 0 0 40px;
+}
+#mod form .gol{
+	height: 100px;
+	padding-left: 40PX;
+}
+.btn-success:hover{
+	text-decoration: none;
+	
+}
+.btn-success {
+    margin-left: 20px;
+    display: inline-block;
+}
+.bg h3{
+	    margin: 40px 0 20px 40px;
+
+}
+.bg input{
+	padding-left: 20px;
+    height: 35px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    width: 70%;
+    margin-left: 50px;
+    color: #000;
+    border:1px solid #020000;
+}
+.bg input:focus{
+	border:2px solid #549df8;
+}

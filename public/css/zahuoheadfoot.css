@@ -1,0 +1,338 @@
+body{
+	background-color: #f6f6f6;
+}
+p,h5,li,ul{
+	margin:0;
+}
+.container{
+	background: #d93627;	
+}
+.w{
+	width: 1200px;
+	margin:0 auto;
+}
+.container .w img{
+	display: block;
+}
+header{
+	background: #af150b;
+}
+/**/
+#bar{
+	background: #e3e4e5;
+	height: 30px;
+	border-bottom: 1px solid #ddd;
+	font-size: 12px;
+    line-height: 30px;
+    color: #999;
+    }
+.fr{
+	float: right;
+}
+.fl{
+	float: left;
+}
+a{
+	text-decoration: none;
+}
+#bar ul{
+	list-style: none;
+	margin: 0;
+    padding: 0;
+}
+#bar ul li{
+	float: left;
+}
+#bar ul li a{
+	color: #999;
+}
+/*#bar ul li a{
+	padding:0 7px;
+}*/
+#bar .city{
+	margin-left: 200px;
+}
+.space{
+	width: 1px;
+	height: 10px;
+	background-color: #ccc;
+	margin:10px 10px ;
+}
+#bar ul li .f10{
+	color: #f10215;
+}
+/*字体图标的使用*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?wxnt07');
+  src:  url('../fonts/icomoon.eot?wxnt07#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?wxnt07') format('truetype'),
+    url('../fonts/icomoon.woff?wxnt07') format('woff'),
+    url('../fonts/icomoon.svg?wxnt07#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+i{
+	font-family: 'icomoon';
+	font-style: normal;
+}
+.qr-code{
+	position: relative;
+}
+.qr-code .triangle{
+	position: absolute;
+	top:30px;
+	left: 0;
+	display: block;
+}
+.qr-code .triangle img{
+	border:1px solid #ccc;
+	padding:3px;
+}
+.triangle span{
+	position: absolute;
+	top: -5px;
+    left: 30%;
+	width: 0;
+    height: 0;
+	border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 6px solid #fff;
+}
+/*logo及其search*/
+/*#navbar {
+	position: relative;
+	background-color: pink;
+}*/
+.logo img{
+	vertical-align: top;
+	border:1px solid #ddd;
+}
+#navbar .con{
+	position: relative;
+	height: 140px;
+}
+#navbar .logo{
+	position: absolute;
+	top:-30px;
+	left: 0;
+	background: #fff;
+}
+#navbar .search{
+	position: absolute;
+	top:25px;
+	left: 320px;
+	width: 550px;
+}
+#navbar .search input{
+	height: 33px;
+	width: 498px;
+	border: 2px solid #f10215;
+	float: left;
+	font-size: 14px;
+	padding-left: 5px;
+	box-sizing: border-box;
+}
+#navbar .search button{
+	width: 50px;
+	height: 33px;
+	float: left;
+	background-color: #f10215;
+	border:0;
+}
+#navbar .search button i{
+	font-family: 'icomoon';
+	color: #fff;
+
+}
+a{
+	color: #000;
+}
+input,button{
+	padding:0;
+	margin:0;
+}
+ul{
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+li{
+	float: left;
+}
+/*购物车*/
+.shopcar{
+	width: 180px;
+	height: 33px;
+	position: absolute;
+	right: 95px;
+	top:25px;
+	border:1px solid #ccc;
+	background: #fff;
+	line-height: 33px;
+	text-align: center;
+}
+.shopcar i{
+	font-family: 'icomoon';
+	color: #f10215;
+	margin-right: 5px;
+}
+.shopcar a{
+	position: relative;
+}
+.shopcar span{
+	position: absolute;
+	top: -5px;
+    right: -18px;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	border-radius: 50%;
+	background: #f10215;
+	text-align: center;
+	color: #fff;
+}
+/*word*/
+.word{
+	position: absolute;
+	top:70px;
+	left: 320px;
+}
+/*导航栏*/
+.nav{
+ width: 770px;
+  height: 40px;
+  position: absolute;
+  left: 200px;
+  bottom: 0;
+}
+.nav ul{
+	list-style: none;
+}
+.nav ul li{
+	float: left;
+	margin-left: 24px;
+}
+.nav ul li a:hover{
+	color: #f10215;
+}
+.nav ul li a{
+	font-size: 16px;
+	font-weight: bold;
+}
+/*.nav ul li.space{
+	height: 10px;
+	line-height: 10px;
+}*/
+/*超级*/
+.super{
+	position: absolute;
+	bottom: 5px;
+	right: 0;
+}
+/*脚部*/
+#foot .divide{
+	padding: 30px 0px;
+	width:100%; 
+}
+#foot .line{
+   border-bottom: 1px solid #DEDEDE;
+}
+#foot .divide ul{
+	height: 42px;
+}
+#foot .divide ul li{
+	height: 42px;
+	line-height: 42px;
+	width: 290px;
+}
+#foot .divide h5{
+	width: 36px;
+    height: 42px;
+    font-size: 18px;
+    font-weight: 700;
+	float: left;
+    background: url(../../public/images/common/index.png) no-repeat;
+}
+#foot .divide .duo{
+	background-position: 0 0;
+}
+#foot .divide .spild{
+	background-position: 0 -42px;
+}
+#foot .divide .fuwu{
+	background-position: 0 -84px;
+}
+#foot .divide .low{
+	background-position: 0 -126px;
+}
+#foot .divide p{
+	float: left;
+	margin-left: 15px;
+	font-weight: bold;
+	font-size: 16px;
+}
+/*购物指南*/
+#foot .list{
+   padding:30px 0;
+   overflow: hidden;
+   border-bottom: 1px solid #DEDEDE;
+}
+#foot .list li{
+	float: none;
+
+}
+#foot .list .item h5{
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+#foot .list .item li{
+	padding:3px 0;
+}
+#foot .list .item li a{
+	font-size: 12px;
+	color: #666;
+}
+#foot .list .item li a:hover{
+	color: #f10215;
+}
+#foot .list .item{
+	float: left;
+	width: 198px;
+	text-align: center;
+}
+#foot .list .item-r{
+	height: 150px;
+	background: url(../../public/images/common/ico_footer.png) no-repeat;
+	background-position: 0 0;
+}
+#foot .list .item-r p:first-of-type{
+	text-align: center;
+	font-size: 12px;
+	color: #666;
+	margin-top: 20px;
+}
+#foot .list .item-r p:last-of-type{
+	text-align: right;
+}
+#foot .list .item-r p a{
+	color: #666;
+	font-size: 12px;
+	
+}
+/*底部*/
+.foot{
+	text-align: center;
+}
+.foot li a{
+	color: #666;
+	font-size: 12px;
+	display: block;
+	padding: 0 10px;
+}
+.foot li+li {
+	border-left: 1px solid #666;
+}
+.foot {
+	text-align: center;
+}
